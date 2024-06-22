@@ -3,6 +3,7 @@ const bodyParser = require("body-parser");
 const cors = require("cors");
 const connectDB = require("./config/database");
 const foodRoutes = require("./routes/foodRoutes");
+const groupItemRoutes = require('./routes/groupItemRoutes');
 
 const app = express();
 
@@ -18,6 +19,7 @@ app.use("/uploads", express.static("uploads"));
 
 // Use food routes
 app.use("/api", foodRoutes);
+app.use('/api', groupItemRoutes);
 
 const PORT = 3000;
 app.listen(PORT, () => {
