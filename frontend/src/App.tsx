@@ -7,6 +7,7 @@ import AddGroupItem from './components/shared-component/AddGroupItem'
 import FoodVariant from './components/shared-component/FoodVariant'
 import FoodAvailability from './components/shared-component/FoodAvailability'
 import MenuType from './components/shared-component/MenuType'
+import ManageOrder from './components/shared-component/ManageOrder'
 
 
 const App: React.FC = () => {
@@ -20,6 +21,7 @@ const App: React.FC = () => {
           <Route path='/food-variant' element={<FoodVariant />} />
           <Route path='/food-availability' element={<FoodAvailability />} />
           <Route path='/menu-type' element={<MenuType />} />
+          <Route path='/manage-order' element={<ManageOrder />} />
         </Routes>
       </Layout>
     </BrowserRouter>
